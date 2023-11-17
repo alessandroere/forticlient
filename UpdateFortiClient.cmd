@@ -6,5 +6,7 @@ curl --location --output "C:\FortiClientVPNSetup7010.exe" "https://github.com/al
 echo Installing FortiClientVPN...
 C:\FortiClientVPNSetup7010.exe /quiet /norestart
 
+REM timeout /t 60 /nobreak
+
 echo Deleting FogClient setup file...
 DEL /f C:\FortiClientVPNSetup7010.exe
